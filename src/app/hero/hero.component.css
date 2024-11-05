@@ -1,0 +1,98 @@
+.hero-card {
+  max-width: 800px;
+  margin: 35px auto;
+  background-color: white;
+  color: black;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin-bottom: 50px;
+}
+
+.hero-card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.hero-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: white; /* Always white background for avatar */
+  background-image: url('/assets/icone-angulaire.png');
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 16px;
+  margin-top: -16px;
+  border: 2px solid #e0e0e0; /* Light gray border for better visibility */
+}
+
+.title-container mat-card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  color: inherit; /* Inherit color to adapt based on the mode */
+}
+
+.title-container mat-card-subtitle {
+  font-size: 16px;
+  color: #555;
+  margin: 0;
+  color: inherit; /* Inherit color to adapt based on the mode */
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  max-height: 500px;
+  border-radius: 12px 12px 0 0;
+  object-fit: cover;
+}
+
+.hero-card mat-card-content {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  padding-top: 16px;
+}
+
+:host {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-card {
+    max-width: 90%;
+    margin: 16px auto;
+  }
+}
+
+/* Dark Mode Styles */
+.hero-card.dark-mode {
+  background-color: #1e1e1e !important; /* Dark background for card */
+  color: white !important; /* White text for dark mode */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5) !important;
+}
+
+.hero-card.dark-mode .hero-avatar {
+  background-color: white !important; /* Ensure avatar background is always white */
+  border-color: white !important; /* White border for contrast in dark mode */
+}
+
+.hero-card.dark-mode mat-card-title,
+.hero-card.dark-mode mat-card-subtitle {
+  color: white !important; /* Ensure title and subtitle are white in dark mode */
+}

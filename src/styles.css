@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Default link styling */
+.mat-list-item {
+    color: inherit; /* Keeps the color consistent in both light and dark modes */
+    text-decoration: none;
+  }
+  
+  /* Active tab styling */
+  .active-tab {
+    font-weight: bold; /* Make active tab bold */
+    color: #1976d2; /* Choose a highlight color for the active tab */
+    border-left: 4px solid #1976d2; /* Add a left border for active tab */
+    background-color: rgba(25, 118, 210, 0.1); /* Light background for contrast */
+  }
+  
+  /* Dark Mode Active Tab Styling */
+  .dark-mode .active-tab {
+    color: #90caf9; /* Lighter color for active tab in dark mode */
+    border-left: 4px solid #90caf9; /* Adjust border color in dark mode */
+    background-color: rgba(144, 202, 249, 0.2); /* Light background for dark mode */
+  }
+  

@@ -1,0 +1,20 @@
+<mat-card class="about-card" [class.dark-mode]="isDarkMode">
+    <mat-card-header>
+      <mat-card-title>About Me</mat-card-title>
+      <mat-card-subtitle>Download or View My Resume</mat-card-subtitle>
+    </mat-card-header>
+  
+    <mat-card-content>
+      <!-- Option 1: Embed PDF in an iframe -->
+      <div class="pdf-container">
+        <iframe src="assets/resume.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="500px" frameborder="0"></iframe>
+    </div>
+  
+      <!-- Option 2: Provide a link to download or view in a new tab -->
+      <p class="download-text">Alternatively, you can download the resume below:</p>
+      <button mat-raised-button color="primary" (click)="downloadResume()">
+        Download Resume
+      </button>
+    </mat-card-content>
+  </mat-card>
+  

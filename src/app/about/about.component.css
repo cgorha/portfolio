@@ -1,0 +1,33 @@
+.about-card {
+    max-width: 800px;
+    margin: 35px auto;
+    background-color: white;
+    color: black;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
+  }
+  
+  .about-card.dark-mode {
+    background-color: #1e1e1e !important;
+    color: white !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5) !important;
+  }
+  
+  .pdf-container {
+    margin-top: 16px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .download-text {
+    text-align: center;
+    margin: 16px 0;
+  }
+  
+  button {
+    display: block;
+    margin: 0 auto;
+  }
+  
