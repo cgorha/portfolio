@@ -9,8 +9,6 @@ import { AppComponent } from './app.component';
 export const routes: Routes = [
 { path: '', component: HeroComponent},
 { path: 'about', component: AboutComponent},
-{ path: 'projects', component: ProjectsComponent },
-{ path: 'contact', component: ContactComponent },
 { path: '**', redirectTo: '' } 
 ];
 
